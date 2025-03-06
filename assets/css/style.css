@@ -1,0 +1,44 @@
+body{
+
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto_Condensed-Light.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    display: flex;
+    gap: 50px;
+    
+}
+
+.welcome{
+    display: flex;
+}
+
+.welcome-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bio{
+    display: flex;
+    align-items: center;
+}
+
+.bio img{
+    border-radius: 100%;
+}
+
+.contact{
+    justify-content: center;
+}
