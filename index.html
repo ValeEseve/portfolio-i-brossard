@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Ignacio Brossard</title>
+    <title>Ignacio Brossard - Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/imgs/web/Fav.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/4425dd6319.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -18,7 +19,7 @@
         <section class="menu-txt">
             <a href="#bio"><h3>Bio</h3></a>
             <a href="#portfolio"><h3>Portfolio</h3></a>
-            <a href="#id"><h3>Contact</h3></a>
+            <a href="#contact"><h3>Contact</h3></a>
         </section>
     </nav>    
     <main>
@@ -37,7 +38,6 @@
             </article>
         </section>
         <section id="portfolio">
-            <h3>Illustrations</h3>
             <img src="./assets/imgs/portfolio1/2017_Knighthood_ToTheRoad.jpg" alt="">
             <img src="./assets/imgs/portfolio1/2018_Cadalso_Cadalso.jpg" alt="2018_Cadalso_Cadalso">
             <img src="./assets/imgs/portfolio1/2018_Pavle_Vaiven.jpg" alt="2018_Pavle_Vaiven">
@@ -45,16 +45,30 @@
             <img src="./assets/imgs/portfolio1/2019_Sikario_Destroy-The-Messiah.jpg" alt="2019_Sikario_Destroy-The-Messiah">
             <img src="./assets/imgs/portfolio1/2021_Sikario_EvilGlass.jpg" alt="2021_Sikario_EvilGlass">
             <img src="./assets/imgs/portfolio1/2023_BloodRiver_Fear.jpg" alt="2023_BloodRiver_Fear">
-            <img src="./assets/imgs/portfolio1/2023_Dishearthed_Blank.jpg" alt="Disheathed - Blank">
+            <img src="./assets/imgs/portfolio1/2023_Dishearthed_Blank.jpg" alt="Dishearthed - Blank">
             <img src="./assets/imgs/portfolio1/2023_Sikario_Ailment.jpg" alt="Sikario - Ailment">
+        </section>
+        <section id="portfolio-logos">
             <img src="./assets/imgs/portfolio2/08.jpg" alt="Logos">
         </section>
+
         <section id="contact">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, libero.</p>
+            <h3>Get in touch</h3>
+            <form action="enviar.php" method="POST">
+                <label for="nombre">Name:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensaje">Message:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
     <footer>
-
+        <a href="https://www.instagram.com/brossartworks/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/ignacio.brossard.33" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <p>&copy; Vale Esevé 2025 - Todos los derechos reservados</p>
     </footer>
 </body>
 </html>
