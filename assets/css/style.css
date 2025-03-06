@@ -63,7 +63,7 @@ nav{
 }
 
 .bio{
-    margin-top: 50px;
+    margin-top: 110px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,6 +78,7 @@ nav{
 
 .bio p{
     padding-left: 50px;
+    width: 300px;
 }
 
 .contact{
