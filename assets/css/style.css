@@ -110,6 +110,7 @@ main{
 }
 
 #portfolio img{
+    max-width: 100%;
     width: 100%;
     filter: grayscale(100%);
     transition: filter 0.2s ease-in;
@@ -126,6 +127,7 @@ main{
 
 #portfolio-logos{
     width: 100%;
+    max-width: 100%;
 }
 
 #contact{
@@ -269,11 +271,23 @@ footer p{
     }
 
     #portfolio img{
-        width: 30%;
+        width: 100%;
         transition: scale 0.3s ease-in;
     }
 
     #portfolio img:hover{
         scale: 1.05;
+    }
+}
+
+@media (min-width: 768px) {
+    #portfolio img{
+        width: 49%;
+    }
+}
+
+@media (min-width: 992px) {
+    #portfolio img{
+        width: 30%;
     }
 }
