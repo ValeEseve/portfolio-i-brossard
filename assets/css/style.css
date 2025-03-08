@@ -18,7 +18,7 @@ h3{
 }
 
 nav{
-    background-color: #8b2d2d;
+    background-color: rgb(116, 42, 42);
     grid-area: nav;
     display: flex;
     justify-content: space-between;
@@ -46,6 +46,7 @@ main{
 
 .welcome{
     display: flex;
+    text-align: start;
     color: white;
 }
 
@@ -66,21 +67,21 @@ main{
     flex-direction: column;
     width: 60%;
     text-align: center;
-    justify-content: center;
 }
 
-.welcome button{
-    background-color: #8b2d2d;
+.welcome-txt button{
+    margin-top: 20px;
+    background-color: #a93f3f;
     color: white;
-    padding: 15px;
-    width: 200px;
-    cursor: pointer;
+    border: none;
     border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.4s ease;
 }
 
 #bio{
-    background-color: rgb(27, 27, 27);
-    padding-top: 60px;
+    margin-top: 110px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -123,8 +124,11 @@ main{
     padding-top: 40px;
 }
 
+#portfolio-logos{
+    width: 100%;
+}
+
 #contact{
-    grid-area: contact;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -148,10 +152,6 @@ main{
     max-width: 600px;
 }
 
-#contact input, textarea{
-    background-color: gray;
-}
-
 #contact input, #contact textarea, #contact button {
     width: 100%;
     padding: 10px;
@@ -163,7 +163,6 @@ main{
     margin-top: 30px;
     background-color: #a93f3f;
     color: white;
-    width: 15%;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -203,22 +202,22 @@ footer p{
     body{
         display: grid;
         grid-template-areas: 'nav main'
-        'contact contact'
         'footer footer';
-        grid-template-columns: 1fr 8fr;
     }
 
     .logo img{
         padding: 15px;
-        height: 50px;
-        margin-bottom: 30px;
+        height: 70px;
     }
 
     nav{
-        height: 100vh;
         flex-direction: column;
         justify-content: flex-start;
         position: fixed;
+        top: 0; 
+        left: 0; 
+        height: 100vh;
+        width: auto;
     }
 
     .menu-bars i{
@@ -227,10 +226,8 @@ footer p{
 
     .menu-txt{
         display: flex;
-        justify-content: center;
         flex-direction: column;
-        list-style: none;
-        padding: 0;
+        gap: 10pxpx;
     }
 
     .menu-txt a{
@@ -238,11 +235,12 @@ footer p{
         color: white;
     }
 
-    nav li{
-        height: 40px;
+    main {
+        margin-left: 220px;
     }
 
     .welcome-img{
+        background-position: left;
         justify-content: start;
         position: relative;
     }
@@ -277,9 +275,5 @@ footer p{
 
     #portfolio img:hover{
         scale: 1.05;
-    }
-
-    #portfolio-logos{
-        padding: 0px 50px;
     }
 }
